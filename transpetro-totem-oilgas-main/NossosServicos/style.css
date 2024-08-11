@@ -1,0 +1,83 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      /*background-image: url('https://github.com/rodrigosein/portifolio/blob/main/assets/Bg-menu_Navalshore_1080x1920.jpg?raw=true'); */
+      background-image: url(../../images/bg-totem-video-Rio-Innovation-Week-2024.jpg);
+      background-size: cover;
+      font-family: "Trebuchet MS";
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .botao {
+      /*width: 300px;*/
+      height: auto;
+    }
+    .botao img {
+      margin-top: 0px;
+      /*width: 120px;*/
+      height: auto;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1080px) {
+      .botoes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1080px;/* Largura máxima ajustada para a resolução horizontal */
+        margin-top: 980px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin: 0 auto; /* Centralizar */
+        padding: 20px; /* Adicionar um pouco de espaço ao redor dos botões */
+    }
+    .botao img {
+
+      height: 60px;
+      object-fit: cover;
+    }
+    
+    button {
+        width: calc(33.33% - 10px); /* 33.33% para cada botão, -10px para margens */
+        margin-bottom: 20px; /* Espaço entre os botões */
+        font-size: 18px; /* Tamanho da fonte */
+        padding: 10px; /* Espaçamento interno do botão */
+    }
+  }
+
+    @media (max-width: 768px) {
+      .botao {
+        width: calc(20% - 10px);
+        height: calc(20% - 10px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .botao {
+        width: calc(100% - 20px);
+      }
+    }
+
+    .botoes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /*max-width: 450px; ajuste o valor conforme necessário */
+      margin: 0 auto; /* centralizar */
+      margin-top: 950px;
+      margin-right: 15px;
+      margin-left: 15px;
+  }
+
+  button {
+      width: calc(33.33% - 5px); /* 33.33% para cada botão, -5px para margens */
+      margin-bottom: 10px; /* espaço entre os botões */
+  }
