@@ -1,0 +1,840 @@
+
+html {
+  font-family: "Trebuchet MS";
+}
+
+body {
+  margin: 0px;
+}
+
+.titulo {
+  color: white;
+  width: auto;
+  height: 35px;
+  padding-left: 30px;
+  line-height: 0.6;
+  background-color: rgb(61, 218, 255);
+}
+
+.container {
+  width: auto;
+  display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 10px;
+justify-items: center;
+}
+
+.card,
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9,
+.card10,
+.card11,
+.card12,
+.card13,
+.card14,
+.card15,
+.card16,
+.card17,
+.card18,
+.card19,
+.card20,
+.card21,
+.card22,
+.card23,
+.card24,
+.card25,
+.card26 {
+  width: 235px;
+  height: 320px;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.card-front1,
+.card-back1,
+.card-front2,
+.card-back2,
+.card-front3,
+.card-back3,
+.card-front4,
+.card-back4,
+.card-front5,
+.card-back5,
+.card-front6,
+.card-back6,
+.card-front7,
+.card-back7,
+.card-front8,
+.card-back8,
+.card-front9,
+.card-back9,
+.card-front10,
+.card-back10,
+.card-front11,
+.card-back11,
+.card-front12,
+.card-back12,
+.card-front13,
+.card-back13,
+.card-front14,
+.card-back14,
+.card-front15,
+.card-back15,
+.card-front16,
+.card-back16,
+.card-front17,
+.card-back17,
+.card-front18,
+.card-back18,
+.card-front19,
+.card-back19,
+.card-front20,
+.card-back20,
+.card-front21,
+.card-back21,
+.card-front22,
+.card-back22,
+.card-front23,
+.card-back23,
+.card-front24,
+.card-back24,
+.card-front25,
+.card-back25,
+.card-front26,
+.card-back26 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+
+.card-front1 {
+  transform: rotateY(0deg);
+}
+.card-back1 {
+  transform: rotateY(180deg);
+}
+.card1:hover .card-front1 {
+  transform: rotateY(-180deg);
+}
+.card1:hover .card-back1 {
+  transform: rotateY(0deg);
+}
+
+.card-front2 {
+  transform: rotateY(0deg);
+}
+
+.card-back2 {
+  transform: rotateY(180deg);
+}
+
+.card2:hover .card-front2 {
+  transform: rotateY(-180deg);
+}
+
+.card2:hover .card-back2 {
+  transform: rotateY(0deg);
+}
+
+.card-front3 {
+  transform: rotateY(0deg);
+}
+
+.card-back3 {
+  transform: rotateY(180deg);
+}
+
+.card3:hover .card-front3 {
+  transform: rotateY(-180deg);
+}
+
+.card3:hover .card-back3 {
+  transform: rotateY(0deg);
+}
+
+.card-front4 {
+  transform: rotateY(0deg);
+}
+
+.card-back4 {
+  transform: rotateY(180deg);
+}
+
+.card4:hover .card-front4 {
+  transform: rotateY(-180deg);
+}
+
+.card4:hover .card-back4 {
+  transform: rotateY(0deg);
+}
+.card-front5 {
+  transform: rotateY(0deg);
+}
+
+.card-back5 {
+  transform: rotateY(180deg);
+}
+
+.card5:hover .card-front5 {
+  transform: rotateY(-180deg);
+}
+
+.card5:hover .card-back5 {
+  transform: rotateY(0deg);
+}
+.card-front6 {
+  transform: rotateY(0deg);
+}
+
+.card-back6 {
+  transform: rotateY(180deg);
+}
+
+.card6:hover .card-front6 {
+  transform: rotateY(-180deg);
+}
+
+.card6:hover .card-back6 {
+  transform: rotateY(0deg);
+}
+
+.card-front7 {
+  transform: rotateY(0deg);
+}
+
+.card-back7 {
+  transform: rotateY(180deg);
+}
+
+.card7:hover .card-front7 {
+  transform: rotateY(-180deg);
+}
+
+.card7:hover .card-back7 {
+  transform: rotateY(0deg);
+}
+
+.card-front8 {
+  transform: rotateY(0deg);
+}
+
+.card-back8 {
+  transform: rotateY(180deg);
+}
+
+.card8:hover .card-front8 {
+  transform: rotateY(-180deg);
+}
+
+.card8:hover .card-back8 {
+  transform: rotateY(0deg);
+}
+
+.card-front9 {
+  transform: rotateY(0deg);
+}
+
+.card-back9 {
+  transform: rotateY(180deg);
+}
+
+.card9:hover .card-front9 {
+  transform: rotateY(-180deg);
+}
+
+.card9:hover .card-back9 {
+  transform: rotateY(0deg);
+}
+
+.card-front10 {
+  transform: rotateY(0deg);
+}
+
+.card-back10 {
+  transform: rotateY(180deg);
+}
+
+.card10:hover .card-front10 {
+  transform: rotateY(-180deg);
+}
+
+.card10:hover .card-back10 {
+  transform: rotateY(0deg);
+}
+
+.card-front11 {
+  transform: rotateY(0deg);
+}
+
+.card-back11 {
+  transform: rotateY(180deg);
+}
+
+.card11:hover .card-front11 {
+  transform: rotateY(-180deg);
+}
+
+.card11:hover .card-back11 {
+  transform: rotateY(0deg);
+}
+
+.card-front12 {
+  transform: rotateY(0deg);
+}
+
+.card-back12 {
+  transform: rotateY(180deg);
+}
+
+.card12:hover .card-front12 {
+  transform: rotateY(-180deg);
+}
+
+.card12:hover .card-back12 {
+  transform: rotateY(0deg);
+}
+
+.card-front13 {
+  transform: rotateY(0deg);
+}
+
+.card-back13 {
+  transform: rotateY(180deg);
+}
+
+.card13:hover .card-front13 {
+  transform: rotateY(-180deg);
+}
+
+.card13:hover .card-back13 {
+  transform: rotateY(0deg);
+}
+
+.card-front14 {
+  transform: rotateY(0deg);
+}
+
+.card-back14 {
+  transform: rotateY(180deg);
+}
+
+.card14:hover .card-front14 {
+  transform: rotateY(-180deg);
+}
+
+.card14:hover .card-back14 {
+  transform: rotateY(0deg);
+}
+
+.card-front15 {
+  transform: rotateY(0deg);
+}
+
+.card-back15 {
+  transform: rotateY(180deg);
+}
+
+.card15:hover .card-front15 {
+  transform: rotateY(-180deg);
+}
+
+.card15:hover .card-back15 {
+  transform: rotateY(0deg);
+}
+
+.card-front16 {
+  transform: rotateY(0deg);
+}
+
+.card-back16 {
+  transform: rotateY(180deg);
+}
+
+.card16:hover .card-front16 {
+  transform: rotateY(-180deg);
+}
+
+.card16:hover .card-back16 {
+  transform: rotateY(0deg);
+}
+
+.card-front17 {
+  transform: rotateY(0deg);
+}
+
+.card-back17 {
+  transform: rotateY(180deg);
+}
+
+.card17:hover .card-front17 {
+  transform: rotateY(-180deg);
+}
+
+.card17:hover .card-back17 {
+  transform: rotateY(0deg);
+}
+
+.card-front18 {
+  transform: rotateY(0deg);
+}
+
+.card-back18 {
+  transform: rotateY(180deg);
+}
+
+.card18:hover .card-front18 {
+  transform: rotateY(-180deg);
+}
+
+.card18:hover .card-back18 {
+  transform: rotateY(0deg);
+}
+
+.card-front19 {
+  transform: rotateY(0deg);
+}
+
+.card-back19 {
+  transform: rotateY(180deg);
+}
+
+.card19:hover .card-front19 {
+  transform: rotateY(-180deg);
+}
+
+.card19:hover .card-back19 {
+  transform: rotateY(0deg);
+}
+
+.card-front20 {
+  transform: rotateY(0deg);
+}
+
+.card-back20 {
+  transform: rotateY(180deg);
+}
+
+.card20:hover .card-front20 {
+  transform: rotateY(-180deg);
+}
+
+.card20:hover .card-back20 {
+  transform: rotateY(0deg);
+}
+
+.card-front21 {
+  transform: rotateY(0deg);
+}
+
+.card-back21 {
+  transform: rotateY(180deg);
+}
+
+.card21:hover .card-front21 {
+  transform: rotateY(-180deg);
+}
+
+.card21:hover .card-back21 {
+  transform: rotateY(0deg);
+}
+
+.card-front22 {
+  transform: rotateY(0deg);
+}
+
+.card-back22 {
+  transform: rotateY(180deg);
+}
+
+.card22:hover .card-front22 {
+  transform: rotateY(-180deg);
+}
+
+.card22:hover .card-back22 {
+  transform: rotateY(0deg);
+}
+
+.card-front23 {
+  transform: rotateY(0deg);
+}
+
+.card-back23 {
+  transform: rotateY(180deg);
+}
+
+.card23:hover .card-front23 {
+  transform: rotateY(-180deg);
+}
+
+.card23:hover .card-back23 {
+  transform: rotateY(0deg);
+}
+
+.card-front24 {
+  transform: rotateY(0deg);
+}
+
+.card-back24 {
+  transform: rotateY(180deg);
+}
+
+.card24:hover .card-front24 {
+  transform: rotateY(-180deg);
+}
+
+.card24:hover .card-back24 {
+  transform: rotateY(0deg);
+}
+
+.card-front25 {
+  transform: rotateY(0deg);
+}
+
+.card-back25 {
+  transform: rotateY(180deg);
+}
+
+.card25:hover .card-front25 {
+  transform: rotateY(-180deg);
+}
+
+.card25:hover .card-back25 {
+  transform: rotateY(0deg);
+}
+
+.card-front26 {
+  transform: rotateY(0deg);
+}
+
+.card-back26 {
+  transform: rotateY(180deg);
+}
+
+.card26:hover .card-front26 {
+  transform: rotateY(-180deg);
+}
+
+.card26:hover .card-back26 {
+  transform: rotateY(0deg);
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+  .titulo {
+    padding-left: 20px;
+    width: auto;
+    height: 120px;
+    hyphens: auto;
+  }
+  .entrevista {
+    padding-left: 20px;
+    padding-right: 50px;
+    text-align: left;
+    hyphens: auto;
+  }
+  .container {
+    width: auto;
+padding: auto;
+  }
+  .card,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9,
+  .card10,
+  .card11,
+  .card12,
+  .card13,
+  .card14,
+  .card15,
+  .card16,
+  .card17,
+  .card18,
+  .card19,
+  .card20,
+  .card21,
+  .card22,
+  .card23,
+  .card24,
+  .card25,
+  .card26 {
+
+    width: 100px;
+    height: 120px;
+  }
+  img {
+
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 281px) and (max-width: 414px){
+  .container {
+grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+  .titulo {
+    padding-left: 20px;
+    width: auto;
+  }
+  .entrevista {
+    padding-left: 20px;
+    padding-right: 50px;
+    text-align: left;
+    hyphens: auto;
+  }
+  .container {
+    width: auto;
+padding: auto;
+  }
+  .card,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9,
+  .card10,
+  .card11,
+  .card12,
+  .card13,
+  .card14,
+  .card15,
+  .card16,
+  .card17,
+  .card18,
+  .card19,
+  .card20,
+  .card21,
+  .card22,
+  .card23,
+  .card24,
+  .card25,
+  .card26 {
+
+    width: 150px;
+    height: 200px;
+  }
+  img {
+
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 819px) {
+  .container {
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+  .titulo {
+    width: auto;
+    padding-left: 30px;
+  }
+  .entrevista {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 50px;
+    text-align: left;
+    hyphens: auto;
+  }
+  .container {
+    width: auto;
+
+  }
+  .card,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9,
+  .card10,
+  .card11,
+  .card12,
+  .card13,
+  .card14,
+  .card15,
+  .card16,
+  .card17,
+  .card18,
+  .card19,
+  .card20,
+  .card21,
+  .card22,
+  .card23,
+  .card24,
+  .card25,
+  .card26 {
+
+  width: 235px;
+  height: 320px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
+  .container {
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+  .titulo {
+    width: auto;
+    padding-left: 30px;
+  }
+  .entrevista {
+    padding-left: 30px;
+    padding-right: 60px;
+    text-align: left;
+    hyphens: auto;
+  }
+  .container {
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9,
+  .card10,
+  .card11,
+  .card12,
+  .card13,
+  .card14,
+  .card15,
+  .card16,
+  .card17,
+  .card18,
+  .card19,
+  .card20,
+  .card21,
+  .card22,
+  .card23,
+  .card24,
+  .card25,
+  .card26 {
+
+    width: 250px;
+    height: 320px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+  .titulo {
+    width: auto;
+    padding-left: 60px;
+  }
+  .entrevista {
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: left;
+    hyphens: auto;
+  }
+  .container {
+    width: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .card,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6,
+  .card7,
+  .card8,
+  .card9,
+  .card10,
+  .card11,
+  .card12,
+  .card13,
+  .card14,
+  .card15,
+  .card16,
+  .card17,
+  .card18,
+  .card19,
+  .card20,
+  .card21,
+  .card22,
+  .card23,
+  .card24,
+  .card25,
+  .card26 {
+
+    width: 260px;
+    height: 332px;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.card-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-ampliada {
+  width: 350px;
+}
+.card-content {
+  width: 350px;
+  text-align: center;
+}
+
+.card-overlay.show {
+  display: flex;
+}
+
+.meu-link {
+color: rgb(255, 255, 255);
+font-size: 16px;
+text-decoration: none;
+}
+.meu-link:hover {
+color: rgb(168, 180, 0); /* Define a cor do texto quando o mouse passar por cima */
+}
