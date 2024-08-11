@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Tela Inicial -->
+        <div class="screen" id="start-screen">
+            <img src="images/tela_inicial.jpg" alt="Tela Inicial" class="full-image">
+            <div class="button-container">
+                <img id="start-btn" src="/QUIZ/images/Botao-Iniciar-Quiz-01.png" alt="Iniciar Quiz" class="start-image" onclick="startQuiz()">
+                <!-- Removido o target="_blank" para abrir na mesma janela -->
+                <a href="../index.html">
+                    <img src="/QUIZ/images/botao-toque-na tela-am.png" alt="MENU-Principal" class="link-image">
+                </a>
+            </div>
+        </div>
+
+        <!-- Telas de Informação -->
+        <div class="screen info-screen" id="info-screen-1" style="display: none;">
+            <img src="images/info1.jpg" alt="Informações 1" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-2" style="display: none;">
+            <img src="images/info2.jpg" alt="Informações 2" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-3" style="display: none;">
+            <img src="images/info3.jpg" alt="Informações 3" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-4" style="display: none;">
+            <img src="images/info4.jpg" alt="Informações 4" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-5" style="display: none;">
+            <img src="images/info5.jpg" alt="Informações 5" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-6" style="display: none;">
+            <img src="images/info6.jpg" alt="Informações 6" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-7" style="display: none;">
+            <img src="images/info7.jpg" alt="Informações 7" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-8" style="display: none;">
+            <img src="images/info8.jpg" alt="Informações 8" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-9" style="display: none;">
+            <img src="images/info9.jpg" alt="Informações 9" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <div class="screen info-screen" id="info-screen-10" style="display: none;">
+            <img src="images/info10.jpg" alt="Informações 10" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <!-- Tela de Perguntas -->
+        <div class="screen" id="question-screen" style="display: none;">
+            <div id="question-content"></div>
+            <div id="options"></div>
+        </div>
+
+        <!-- Tela de Resultado Positivo -->
+        <div class="screen result-screen" id="positive-result-screen" style="display: none;">
+            <img src="images/congratulations.jpg" alt="Parabéns!" class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+
+        <!-- Tela de Resultado Negativo -->
+        <div class="screen result-screen" id="negative-result-screen" style="display: none;">
+            <img src="images/try-again.jpg" alt="Tente Outra Vez." class="full-image">
+            <button class="back-btn" onclick="returnToStart()">
+                <img src="images/home-az.png" alt="Voltar para Tela Inicial" class="button-image">
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

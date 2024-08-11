@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.full-image {
+    position: absolute; /* Imagem de fundo */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre toda a tela */
+    z-index: 0; /* Camada de fundo */
+}
+
+.button-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Mudar para coluna para alinhar verticalmente */
+    gap: 20px; /* Espaço entre os botões */
+    z-index: 1; /* Camada acima da imagem de fundo */
+    margin-top: 300px;
+}
+
+.start-image, .link-image {
+    width: 300px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Manter altura proporcional */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.start-image:hover, .link-image:hover {
+    transform: scale(1.05);
+}
+
+.info-screen img, .result-screen img {
+    width: 100%;
+    height: auto;
+}
+
+.start-btn, .back-btn {
+    position: absolute;
+    padding: 15px 30px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+.start-btn {
+    bottom: 250px;
+
+}
+
+.back-btn {
+    width: 200px;
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse sobre o botão */
+    position: absolute;
+    bottom: 30px; /* Posiciona o botão na parte inferior da tela */
+    right: 30px; /* Posiciona o botão na direita da tela */
+    box-shadow: none;
+
+}
+
+.start-btn:hover {
+    background-color: #0056b3;
+}
+
+.back-btn {
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 200px;
+}
+
+#options img {
+    width: 400px; /* Definir a largura */
+    height: auto; /* Manter altura proporcional */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#options img:hover {
+    transform: scale(1.05);
+}
+
+.bottom-button {
+    position: absolute;
+    bottom: 30px;
+}
+
+.bottom-button button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button-image {
+    width: 150px; /* Defina a largura desejada para o botão */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s;
+}
+
+.button-image:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
