@@ -8,33 +8,50 @@
       font-family: "Trebuchet MS";
     }
 
-
     .container {
       display: flex;
-      /*flex-wrap: wrap;*/
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       height: 100vh;
     }
 
     .botao {
-      width: 220px;
+      /*width: 300px;*/
       height: auto;
-      margin: 10px;
     }
     .botao img {
-      margin-top: 150px;
-      width: 100%;
-      /*height: 100%;*/
+      margin-top: 0px;
+      /*width: 120px;*/
+      height: auto;
+      object-fit: cover;
+    }
+
+    @media (max-width: 1080px) {
+      .botoes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1080px;/* Largura máxima ajustada para a resolução horizontal */
+        margin-top: 980px;
+        margin-right: 15px;
+        margin-left: 15px;
+        margin: 0 auto; /* Centralizar */
+        padding: 20px; /* Adicionar um pouco de espaço ao redor dos botões */
+    }
+    .botao img {
+
+      height: 60px;
       object-fit: cover;
     }
     
-    @media (max-width: 1080px) {
-      .botao {
-        width: calc(35% - 20px);
-        height: calc(0% - 20px);
-      }
+    button {
+        width: calc(33.33% - 10px); /* 33.33% para cada botão, -10px para margens */
+        margin-bottom: 20px; /* Espaço entre os botões */
+        font-size: 18px; /* Tamanho da fonte */
+        padding: 10px; /* Espaçamento interno do botão */
     }
+  }
 
     @media (max-width: 768px) {
       .botao {
@@ -48,3 +65,19 @@
         width: calc(100% - 20px);
       }
     }
+
+    .botoes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      /*max-width: 450px; ajuste o valor conforme necessário */
+      margin: 0 auto; /* centralizar */
+        margin-top: 950px;
+      margin-right: 15px;
+      margin-left: 15px;
+  }
+
+  button {
+      width: calc(33.33% - 5px); /* 33.33% para cada botão, -5px para margens */
+      margin-bottom: 10px; /* espaço entre os botões */
+  }
