@@ -15,7 +15,7 @@ let questions = [
             { image: "images/2 botao 2.png", selectedImage: "images/2 botao2 2.png", value: "2B" },
             { image: "images/2 botao 3.png", selectedImage: "images/2 botao2 3.png", value: "2C" }
         ],
-        answer: "2C",
+        answer: "2A",
         image: "images/pergunta2.jpg"
     },
     {
@@ -73,36 +73,43 @@ let questions = [
 
 let currentQuestionIndex = 0;
 let correctAnswers = 0;
-let timer;
+let currentInfoScreen = 1;
 
 function startQuiz() {
     shuffleQuestions();
     currentQuestionIndex = 0;
     correctAnswers = 0;
     document.getElementById('start-screen').style.display = 'none';
-    showNextInfoScreen(1);
+    currentInfoScreen = 1; // Reset para a primeira tela de informação
+    showInfoScreen(currentInfoScreen);
 }
 
 function shuffleQuestions() {
     questions.sort(() => Math.random() - 0.5);
 }
 
-function showNextInfoScreen(screenNumber) {
-    clearTimeout(timer);
+function showInfoScreen(screenNumber) {
     const screens = document.querySelectorAll('.info-screen');
     screens.forEach(screen => screen.style.display = 'none');
     
     const currentScreen = document.getElementById(`info-screen-${screenNumber}`);
     if (currentScreen) {
         currentScreen.style.display = 'flex';
-        timer = setTimeout(() => {
-            if (screenNumber < screens.length) {
-                showNextInfoScreen(screenNumber + 1);
-            } else {
-                showQuestionScreen();
-            }
-        }, 10000); // 10 segundos
     }
+}
+
+function navigateInfoScreens(direction) {
+    const totalScreens = document.querySelectorAll('.info-screen').length;
+    currentInfoScreen += direction;
+
+    if (currentInfoScreen < 1) {
+        currentInfoScreen = 1;
+    } else if (currentInfoScreen > totalScreens) {
+        showQuestionScreen();
+        return;
+    }
+
+    showInfoScreen(currentInfoScreen);
 }
 
 function showQuestionScreen() {
@@ -127,15 +134,12 @@ function displayQuestion() {
             };
             optionsDiv.appendChild(img);
         });
-
-        timer = setTimeout(nextQuestion, 15000); // 15 segundos
     } else {
         showResultScreen();
     }
 }
 
 function checkAnswer(selectedOption, imgElement) {
-    clearTimeout(timer);
     let question = questions[currentQuestionIndex];
     imgElement.src = question.options.find(option => option.value === selectedOption).selectedImage;
 
@@ -143,12 +147,12 @@ function checkAnswer(selectedOption, imgElement) {
         correctAnswers++;
     }
 
-    setTimeout(nextQuestion, 1000); // Esperar 1 segundos antes de ir para a próxima pergunta
+    setTimeout(nextQuestion, 1000); // Esperar 1 segundo antes de ir para a próxima pergunta
 }
 
 function nextQuestion() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < 3) {
+    if (currentQuestionIndex < questions.length) {
         displayQuestion();
     } else {
         showResultScreen();
@@ -170,7 +174,6 @@ function showResultScreen() {
 }
 
 function returnToStart() {
-    clearTimeout(timer);
     document.querySelectorAll('.screen').forEach(screen => screen.style.display = 'none');
     document.getElementById('start-screen').style.display = 'flex';
 }
